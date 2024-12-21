@@ -15,6 +15,8 @@
         public Merchant? Merchant { get; set; }
         public SearchIndex? SearchIndex { get; set; }
         public Condition? Condition { get; set; }
+        public int? MinPrice { get; set; }
+        public int? MaxPrice { get; set; }
         public SearchRequest(string? keywords = null, string? brand = null, string? title = null, SearchIndex? searchIndex = null, string? actor = null, string? artist = null, string? author = null, string? browseNodeId = null)
         {
             Keywords = keywords;

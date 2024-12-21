@@ -12,6 +12,8 @@ namespace Nager.AmazonProductAdvertising.Model.Request
         public string? Brand { get; set; }
         public string? Title { get; set; }
         public int? ItemPage { get; set; }
+        public int? MinPrice { get; set; }
+        public int? MaxPrice { get; set; }
         [JsonConverter(typeof(StringEnumConverter))]
         public SortBy? SortBy { get; set; }
         public string? BrowseNodeId { get; set; }

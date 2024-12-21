@@ -161,6 +161,8 @@ namespace Nager.AmazonProductAdvertising
                 Merchant = searchRequest.Merchant,
                 SearchIndex = searchRequest.SearchIndex,
                 Condition = searchRequest.Condition,
+                MaxPrice = searchRequest.MaxPrice,
+                MinPrice = searchRequest.MinPrice,
             };
 
             var json = JsonConvert.SerializeObject(request, JsonSerializerSettingsRequest);
